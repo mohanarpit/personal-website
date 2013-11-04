@@ -3,7 +3,6 @@
 	require_once('config.php');
 	require_once('phpMailer/phpmailer.php');
 
-
 	// Sender Info
 	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
@@ -35,10 +34,10 @@
 	$mail->AddAddress(TO_EMAIL,TO_NAME);
 
 	if (SMTP_ENABLE) $mail->IsSMTP();
-	$mail->SMTPSecure='ssl';
+	$mail->SMTPSecure='tls';
 	$mail->SMTPAuth=true;
 	$mail->Host=SMTP_HOST;
-	$mail->Port=465; 
+	$mail->Port=587; 
 	$mail->Username=SMTP_USERNAME;
 	$mail->Password=SMTP_PASSWORD;
 		
