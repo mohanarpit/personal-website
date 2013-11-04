@@ -236,7 +236,7 @@ jQuery(document).ready(function(){
 
 	$map.gmap().bind('init', function(ev, map) {
 		$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
-			$map.gmap('openInfoWindow', {'content': 'Hello World!'}, this);
+			$map.gmap('openInfoWindow', {'content': 'Sin City'}, this);
 		});
 		$map.gmap('option', 'zoom', 16);
 	});
