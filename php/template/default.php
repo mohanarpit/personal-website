@@ -4,11 +4,12 @@
 		<html>
 
 			<head>
-		
+						
 			</head>
 		
 			<body>
-			
+				<div>From: <? echo $name; ?></div>
+				<div>Email:  <?echo $email; ?></div>	
 				<div><? echo $message; ?></div>
 			
 			</body>
